@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+FORM
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script defer src="script.js"></script>
+        <body>
+            
+            
+            <form action="/" method="GET" class="form-container">
+                <div class="form-grp">
+                <label for="names">Name</label>
+                <input type="text" id="name" name="name" required><br>
+                <i class="fa fa-times u_times"> </i>
+                    <i class="fa fa-times u_check"></i>
+            </div>
+            <div class="form-grp">
+            
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email" required><br>
+                <i class="fa fa-times u_times"> </i>
+                    <i class="fa fa-times u_check"></i>
+            </div>
+                <div class="form-grp">
+                
+                <label for="date">PICK A DATE</label>
+                <input type="datetime-local" id="date" name="DATE"><br>
+                <i class="fa fa-times u_times"> </i>
+                <i class="fa fa-times u_check"></i>
+            </div>
+                <div class="form-grp"></div>
+                <label for="time">PICK A TIME</label>
+                <input type="time" id="time" name="TIME"><br>
+                <i class="fa fa-times u_times"> </i>
+                    <i class="fa fa-times u_check"></i>
+                    
+               
+            </div>
+                <div class="form-grp">
+                <label for="no of persons"> 1 person</label>
+                <input type="radio" id="no of people" name="no of persons" value="1 person"><br>
+                <label for="no of people"> 2 people</label>
+                <input type="radio" id="no of people" name="no of persons" value="2 people"><br>
+                <label for="no of persons"> 3 people</label>
+                <input type="radio" id="no of people" name="no of persons" value="3 people"><br>
+                <label for="no of persons"> 4 people</label>
+                <input type="radio" id="no of people" name="no of persons" value="4 people"><br>
+                <i class="fa fa-times u_times"> </i>
+                    <i class="fa fa-times u_check"></i>
+        </div>
+               
+                
+                
+                
+
+                <button id="sweetalert2">MAKE A RESERVATION</button>
+            </form>
+                <script>
+                    document.getElementById("sweetalert2").addEventListener("click",function(){
+                        swal.fire("Your Rservation Was Successful");
+
+                    })
+                </script>
+                
+                
+            </form
+        </body>
+    </head>
+</html>
